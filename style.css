@@ -1,0 +1,35 @@
+* { /* означает, что эти стили будут применяться ко всем блокам - ИСПОЛЬЗУЕМ ВЕЗДЕ!!!*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* падинги и границы включаем в размер объекта*/
+}
+
+section {
+    background-color: #EFF2F9;
+    height: 100vh;
+}
+
+.card {
+    width: 1170px;
+    height: 800px;
+    background: #FFF;
+    box-shadow: 20px 20px 40px 0px rgba(81, 91, 117, 0.25);
+    padding: 60px 0 70px;
+}
+
+.product-image-block {
+    width: 540px;
+    border-right: 2px solid rgba(20, 20, 20, 0.15);
+}
+
+.preview {
+    width: 58px;
+    height: 58px;
+
+}
+
+.preview.selected {
+    background: #FFF;
+    box-shadow: 8px 8px 16px 0px rgba(81, 91, 117, 0.25);
+}
+
