@@ -1,6 +1,6 @@
 *,
 *::before,
-*::after{ /* означает, что эти стили будут применяться ко всем блокам/псевдоэлементам - ИСПОЛЬЗУЕМ ВЕЗДЕ!!!*/
+*::after { /* означает, что эти стили будут применяться ко всем блокам/псевдоэлементам - ИСПОЛЬЗУЕМ ВЕЗДЕ!!!*/
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* падинги и границы включаем в размер объекта*/
@@ -27,23 +27,45 @@ section {
     background: #FFF;
     box-shadow: 20px 20px 40px 0 rgba(81, 91, 117, 0.25);
     padding: 60px 0 70px;
+    display: flex;
 }
 
+/*================// стили для ЛЕВОЙ части //========================*/
+
 .product-image-block {
-    width: 540px;
     border-right: 2px solid rgba(20, 20, 20, 0.15);
+    min-width: 540px; /*ДЛЯ флекс бокса width: 540px ДО задницы - нужно MIN-width: 540px. Задали мин для того чтобы текст в смежной картинке не съедал все свободное пространствао*/
+    display: flex;
+    flex-direction: column;
+}
+
+.img-wrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
 }
 
 .preview {
     width: 58px;
     height: 58px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .preview.selected {
     background: #FFF;
     box-shadow: 8px 8px 16px 0 rgba(81, 91, 117, 0.25);
 }
+
+/*================// стили для ПРАВОЙ части //========================*/
 
 .product-info-block {
     padding: 0 60px; /* вторая половина - отступили от края */
@@ -98,6 +120,13 @@ section {
     margin-bottom: 20px;
 }
 
+.colors-lists {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 .circle {
     width: 16px;
     height: 16px;
@@ -132,6 +161,15 @@ li.selected {
     border-radius: 50%;
     padding: 7px; /*тень вокруг выбранного разноцветного кружочка */
     filter: drop-shadow(2px 2px 4px rgba(81, 91, 117, 0.25));
+}
+
+.cta-wrapper {
+    display: flex;
+}
+
+.cta-wrapper >div {   /*комбинаторы - детки-дивки ниже по уровню имеют этот свойство, т.е. .quantity и .price */
+    flex-grow: 1;
+
 }
 
 .quantity {

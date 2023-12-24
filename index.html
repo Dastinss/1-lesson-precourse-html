@@ -14,15 +14,19 @@
 <section>
     <div  class="card">
         <div class="product-image-block">
-            <img src="./assets/images/main-image.png" alt="Main image">
-            <div class="preview selected">
-                <img src="./assets/images/image.png" alt="image">
+            <div class="img-wrapper">
+                <img src="./assets/images/main-image.png" alt="Main image">
             </div>
-            <div class="preview">
-                <img src="./assets/images/image-1.png" alt="image">
+
+            <div class="preview-wrapper">
+                <div class="preview selected">
+                    <img src="./assets/images/image.png" alt="image">
+                </div>
+                <div class="preview">
+                    <img src="./assets/images/image-1.png" alt="image">
+                </div>
             </div>
         </div>
-
         <div class="product-info-block">
             <h1 class="main-title">Fluted Contrast</h1>
             <span class="subtitle">Mug / 33 cl</span>
@@ -30,7 +34,7 @@
                 elegant and modern, created out of a deep respect for Royal British history and traditions</p>
             <div class="colors">
                 <h2 class="title">Color options</h2>
-                <ul>
+                <ul class="colors-lists">
                     <li class="selected">
                         <div class="circle blue"></div>
                     </li>
@@ -48,17 +52,19 @@
                     </li>
                 </ul>
             </div>
-            <div>
-                <h2 class="title">Quantity </h2>
-                <select class="quantity" name="quantity" id="quantity">
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                </select>
-            </div>
-            <div>
-                <h2 class="title">Price</h2>
-                <span class="price">eur 39,00</span>
+            <div class="cta-wrapper">
+                <div>
+                    <h2 class="title">Quantity </h2>
+                    <select class="quantity" name="quantity" id="quantity">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                </div>
+                <div>
+                    <h2 class="title">Price</h2>
+                    <span class="price">eur 39,00</span>
+                </div>
             </div>
             <button class="btn">Add To Basket</button>
         </div>
