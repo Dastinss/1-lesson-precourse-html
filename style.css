@@ -10,6 +10,7 @@ body { /*перенесли со всех элементов, где они вс
     font-family: Lato, sans-serif;
     font-style: normal;
     line-height: normal;
+    min-width: 375px; /* добавили на случай, если будут открывать на мобилках с малентким экраном. т.е. */
 }
 
 ul {
@@ -281,12 +282,21 @@ li {
         margin: 20px;
     }
 
-    .product-image-block {
-        min-width: auto;
-    }
-
     .product-info-block {
         padding-right: 20px; /* заменили отступы с 60 пх (деск топ) на 20 пх (для мобилы)*/
         padding-left: 20px; /* заменили отступы с 60 пх (деск топ) на 20 пх (для мобилы)*/
+    }
+
+    .main-title {
+        font-size: 34px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .text {
+        margin: 50px 0 55px;
+        font-size: 16px;
     }
 }
